@@ -4,7 +4,7 @@
   "kind": "user",
   "seed": "8aa25174b2ab39e4",
   "planted": "2019-07-30",
-  "last_grown": "2026-11-11",
+  "last_grown": "2026-11-12",
   "trunk": {
     "height": 19,
     "girth": 4,
@@ -61,7 +61,7 @@
       "side": "left",
       "length": 7,
       "pad": 4,
-      "commits_total": 357,
+      "commits_total": 381,
       "pruned": null
     }
   ],
@@ -148,15 +148,15 @@
   ],
   "vitals": {
     "phase": "growing",
-    "streak_days": 17,
+    "streak_days": 18,
     "idle_days": 0,
-    "commits_total": 2658,
+    "commits_total": 2682,
     "stars_total": 33,
     "public_repos": 4,
     "activity_28d": {
-      "R_kgDOOVDW7w": 102,
+      "R_kgDOOVDW7w": 126,
       "R_kgDOSLC8LA": 209,
-      "R_kgDOVFTckQ": 14
+      "R_kgDOVFTckQ": 13
     },
     "grew": {}
   }
