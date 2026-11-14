@@ -13,4 +13,32 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: appnice/git-bonsai@v0
+
+      # Pinned fork of appnice/git-bonsai: a polyglot repo colours its pad with every language
+      # it has, instead of only the one GitHub reports as primary.
+      - uses: actions/checkout@v4
+        with:
+          repository: seven-lynx/git-bonsai
+          ref: 9725c64b01d25dae0f96fd0fe85f1c23489af974
+          path: .git-bonsai
+
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: .git-bonsai -> target
+
+      - name: Grow
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: >
+          cargo run --release --quiet --manifest-path .git-bonsai/Cargo.toml --
+          grow --login seven-lynx --state bonsai/state.json --out bonsai --themes dark,light
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- bonsai
+          if git diff --cached --quiet; then echo "Tree unchanged."; exit 0; fi
+          git commit -m "chore(bonsai): grow $(date -u +%F)"
+          git push
