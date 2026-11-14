@@ -4,7 +4,7 @@
   "kind": "user",
   "seed": "8aa25174b2ab39e4",
   "planted": "2019-07-30",
-  "last_grown": "2026-11-12",
+  "last_grown": "2026-11-13",
   "trunk": {
     "height": 19,
     "girth": 4,
@@ -33,6 +33,18 @@
       "name": "skyhook",
       "lang": "JavaScript",
       "color": "#f1e05a",
+      "langs": [
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 419530
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 41077
+        }
+      ],
       "anchor": 6,
       "side": "left",
       "length": 4,
@@ -45,11 +57,28 @@
       "name": "Roam",
       "lang": "HTML",
       "color": "#e34c26",
+      "langs": [
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 2934737
+        },
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 2120709
+        },
+        {
+          "name": "PLpgSQL",
+          "color": "#336790",
+          "bytes": 1812788
+        }
+      ],
       "anchor": 9,
       "side": "right",
       "length": 9,
       "pad": 6,
-      "commits_total": 2252,
+      "commits_total": 2253,
       "pruned": null
     },
     {
@@ -61,7 +90,7 @@
       "side": "left",
       "length": 7,
       "pad": 4,
-      "commits_total": 381,
+      "commits_total": 384,
       "pruned": null
     }
   ],
@@ -148,15 +177,15 @@
   ],
   "vitals": {
     "phase": "growing",
-    "streak_days": 18,
+    "streak_days": 19,
     "idle_days": 0,
-    "commits_total": 2682,
+    "commits_total": 2686,
     "stars_total": 33,
-    "public_repos": 4,
+    "public_repos": 5,
     "activity_28d": {
-      "R_kgDOOVDW7w": 126,
-      "R_kgDOSLC8LA": 209,
-      "R_kgDOVFTckQ": 13
+      "R_kgDOOVDW7w": 129,
+      "R_kgDOSLC8LA": 205,
+      "R_kgDOVFTckQ": 5
     },
     "grew": {}
   }
