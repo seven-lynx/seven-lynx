@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: seven-lynx/git-bonsai
-          ref: 9725c64b01d25dae0f96fd0fe85f1c23489af974
+          ref: 4b32f216531fca25904260cffcc54907ca4fd27d
           path: .git-bonsai
 
       - uses: dtolnay/rust-toolchain@stable
