@@ -2,6 +2,7 @@
   "schema": 1,
   "login": "seven-lynx",
   "kind": "user",
+  "pad_mix": "patches",
   "seed": "8aa25174b2ab39e4",
   "planted": "2019-07-30",
   "last_grown": "2026-11-13",
